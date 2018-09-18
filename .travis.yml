@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+script:
+- echo "skipping tests"
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  app: gymbosses-frontend
+  api_key:
+    secure: 1NAwE+F8F+rn1a3OpjLO/MaarToi9Vcdpj9u2dhfA4cOwha141kBKmUgBEObMf2kBQg4nweuyXdcfB7CCHGh0zAhQf+Gc+Npvbc8EpHVZU2A1/pUd1FtcmVnZNYyJw+KSFV19+HBGF9lqQG9AkUeOF5h1IuLHcmqgxrE49uBhcNiU1cX540jWL43Z55UvsPKvBzLpjXyzFYIm10jGYwo1Ay3oJgdArlrGVhPOOwpdg0Lv22f52ejPk12cDCGXXcvmFfdpOsjODipY2TuUtmXrIfm3Zu4MgKnLVHoyATd1ab4FjQ4+o0KNKLn/CKA9R9pIFgDiPpkZ6ATLhl31bMEiElWojcICiHgrVLjFn4qF7pxeHzjTgSMIMuQmiX3vtteruKOTNTRJx+vhDEnvxoTGF1CGLRHaXJAW00w2uV5XhjYp+SjLKnywCJYX5Y10IbjHt4T2v0+dOZ9i2TRg95OXUDsXAZwCY4EB+QkLygC0Tu99vErKULIvsFfe7Io6tLU6sGC307DnbV0uukjF2sIqFUJr8ikNYv/Gct/etXF0AxxwQfw06r4WU0tyaJxPHrXrcjptLacAhfV2ul9J+nV+cEM1fJERB2PTV7ET1oK/uMs+X9KttdzMpNW63xhOu4dBYb00ZgCmutCRMMT5u85dA8qkVfofLr4y02T9FEH2dc=
