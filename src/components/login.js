@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Login extends Component {
     authlogin(){
-        fetch('http://localhost:3000/')
+        fetch('https://gymbosses.herokuapp.com/')
         .then((response) => response.json())
         .then((responseJson) => {
             window.location=responseJson.url;
